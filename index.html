@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -67,7 +67,7 @@
       margin-left: 20px;
       margin-right: 20px;
     }
-   
+
     .menu-item {
       background-color: white;
       display: flex;
@@ -78,7 +78,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
-   
+
     .menu-text {
       flex: 1;
     }
@@ -113,19 +113,21 @@
       display: flex;
       justify-content: space-between;
       margin: 40px 20px;
+      flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
     }
 
     .offer-box {
-        background-color: #fff;
-        padding: 20px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        width: 30%;
-        min-height: 350px; /* Adjusted height */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      width: 30%;
+      min-height: 350px; /* Adjusted height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px; /* Added margin to create space between boxes */
     }
 
     .offer-box h3 {
@@ -144,6 +146,7 @@
       font-weight: bold;
       color: #f0c040;
     }
+
     .offer-item {
       display: flex;
       align-items: center;
@@ -157,39 +160,109 @@
       border-radius: 5px;
       margin-right: 10px;
     }
+
     .footer {
-  background-color: #fce4ec; /* Matches the body background color */
-  color: black;
-  padding: 10px 0; /* Smaller padding */
-  text-align: center;
-}
+      background-color: #fce4ec; /* Matches the body background color */
+      color: black;
+      padding: 10px 0; /* Smaller padding */
+      text-align: center;
+    }
 
-.footer .footer-content {
-  display: flex;
-  
-  justify-content: center;
-  align-items: center;  /* Vertically center the items */
-  gap: 30px; /* Increased gap between items */
-}
+    .footer .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Vertically center the items */
+      gap: 30px; /* Increased gap between items */
+    }
 
-.social-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: black; /* Changed text color to black */
-}
+    .social-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: black; /* Changed text color to black */
+    }
 
-.social-item p {
-  margin-top: 5px;
-  font-size: 14px; /* Reduced font size */
-}
+    .social-item p {
+      margin-top: 5px;
+      font-size: 14px; /* Reduced font size */
+    }
 
-.social-logo {
-  width: 30px; /* Smaller logo size */
-  height: 30px;
-  object-fit: cover;
-}
+    .social-logo {
+      width: 30px; /* Smaller logo size */
+      height: 30px;
+      object-fit: cover;
+    }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .header {
+        height: 150px; /* Adjust header height on smaller screens */
+      }
+
+      .logo {
+        width: 120px; /* Adjust logo size */
+      }
+
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-img {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .offers-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .offer-box {
+        width: 90%; /* Adjust width to take up most of the screen */
+        margin-bottom: 20px; /* Adjust spacing */
+      }
+
+      .footer .footer-content {
+        flex-direction: column; /* Stack footer items vertically */
+      }
+
+      .social-item {
+        margin-bottom: 10px; /* Add spacing between social items */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-text h3 {
+        font-size: 16px; /* Smaller title font size */
+      }
+
+      .menu-text p {
+        font-size: 12px; /* Smaller price font size */
+      }
+
+      .description {
+        font-size: 11px; /* Smaller description font size */
+      }
+
+      .offer-box h3 {
+        font-size: 18px; /* Smaller offer box title font size */
+      }
+
+      .offer-box p {
+        font-size: 14px; /* Smaller offer description font size */
+      }
+
+      .offer-box .price {
+        font-size: 16px; /* Smaller price font size */
+      }
+
+      .social-item p {
+        font-size: 12px; /* Smaller social media text */
+      }
+    }
   </style>
 </head>
 <body>
