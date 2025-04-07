@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec; /* soft pink background for whole page */
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: url(images/cookies4.avif) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 2;
+      width: 180px;
+      height: auto;
+      border-radius: 90px;
+    }
+
+    .contact-info {
+      background-color: #fce4ec;
+      color: black;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 16px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #f0c040;
+    }
+
+    .menu-section {
+      padding: 40px 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+   
+    .menu-item {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+   
+    .menu-text {
+      flex: 1;
+    }
+
+    .menu-text h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .menu-text p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .description {
+      font-size: 13px;
+      color: #999;
+      margin-top: 5px;
+    }
+
+    .menu-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+
+    /* New Styles for Offers Section */
+    .offers-section {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 20px;
+    }
+
+    .offer-box {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        width: 30%;
+        min-height: 350px; /* Adjusted height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .offer-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .offer-box p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .offer-box .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #f0c040;
+    }
+    .offer-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .offer-img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .footer {
+  background-color: #fce4ec; /* Matches the body background color */
+  color: black;
+  padding: 10px 0; /* Smaller padding */
+  text-align: center;
+}
+
+.footer .footer-content {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;  /* Vertically center the items */
+  gap: 30px; /* Increased gap between items */
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black; /* Changed text color to black */
+}
+
+.social-item p {
+  margin-top: 5px;
+  font-size: 14px; /* Reduced font size */
+}
+
+.social-logo {
+  width: 30px; /* Smaller logo size */
+  height: 30px;
+  object-fit: cover;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="overlay"></div>
+    <img src="images/Logo.jpg" alt="Logo" class="logo" />
+  </header>
+
+  <section class="contact-info">
+    <p><i class="fas fa-map-marker-alt"></i>Beirut , Ramlet-al-bayda</p>
+    <p><i class="fas fa-phone-alt"></i>70 026 060</p>
+  </section>
+
+  <section class="menu-section">
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>ChocolatBananaBrownie</h3>
+        <p>$2</p>
+        <p class="description">Rich brownie with banana.(8.5 g protien,158 calories)</p>
+      </div>
+      <img src="images/ChocolatBananaBrownie.jpg" alt="ChocolatBananaBrownie" class="menu-img" />
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Cookies</h3>
+        <p>$3.00</p>
+        <p class="description">Crispy on the edges, gooey in the center – a classic favorite.(5.7 g protein , 160 calories).</p>
+      </div>
+      <img src="images/Cookies.jpg" alt="Cookies" class="menu-img" />
+    </div>
+
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>ChocoBomb</h3>
+          <p>$3.00</p>
+          <p class="description">Dates chocolat and nuts.(6.3 g , 188 calories).</p>
+        </div>
+        <img src="images/ChocoBomb.jpg" alt="Cookies" class="menu-img" />
+      </div>
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Fruitypie</h3>
+        <p>$4.00</p>
+        <p class="description">Flaky crust filled with seasonal fruits.(9.4g , 255 calories)</p>
+      </div>
+      <img src="images/Fruitypie.jpg" alt="Fruitypie" class="menu-img" />
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>PeanutButterCup</h3>
+        <p>$3.00</p>
+        <p class="description">Peanut butter and chocolate combined in a perfect cup.(10g protein, 333 calories)</p>
+      </div>
+      <img src="images/PeanutButterCup.jpg" alt="PeanutButterCup" class="menu-img" />
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Protein bar</h3>
+        <p>$3.00</p>
+        <p class="description">Packed with protein and nuts, ideal for post-workout fuel.(10g of protein , 293 calories).</p>
+      </div>
+      <img src="images/Protein bar.jpg" alt="Protein bar" class="menu-img" />
+    </div>
+  </section>
+
+  <section class="offers-section">
+    <div class="offer-box">
+      <h3>Offer 1: Dessert Delight</h3>
+      <div class="offer-item">
+        <img src="images/ChocolatBananaBrownie.jpg" alt="ChocolatBananaBrownie" class="offer-img" />
+        <p>ChocolatBananaBrownie</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/Cookies.jpg" alt="Cookies" class="offer-img" />
+        <p>Cookies</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/Fruitypie.jpg" alt="Fruitypie" class="offer-img" />
+        <p>Fruitypie</p>
+      </div>
+      <p class="price">Total: $10.00</p>
+    </div>
+  
+    <div class="offer-box">
+      <h3>Offer 2: Nutty & Sweet Combo</h3>
+      <div class="offer-item">
+        <img src="images/ChocoBomb.jpg" alt="ChocoBomb" class="offer-img" />
+        <p>ChocoBomb</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/PeanutButterCup.jpg" alt="PeanutButterCup" class="offer-img" />
+        <p>PeanutButterCup</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/Protein bar.jpg" alt="Protein bar" class="offer-img" />
+        <p>Protein Bar</p>
+      </div>
+      <p class="price">Total: $10.00</p>
+    </div>
+  
+    <div class="offer-box">
+      <h3>Offer 3: Fruity and Nutty Special</h3>
+      <div class="offer-item">
+        <img src="images/Fruitypie.jpg" alt="Fruitypie" class="offer-img" />
+        <p>Fruitypie</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/PeanutButterCup.jpg" alt="PeanutButterCup" class="offer-img" />
+        <p>PeanutButterCup</p>
+      </div>
+      <div class="offer-item">
+        <img src="images/ChocolatBananaBrownie.jpg" alt="ChocolatBananaBrownie" class="offer-img" />
+        <p>ChocolatBananaBrownie</p>
+      </div>
+      <p class="price">Total: $10.00</p>
+    </div>
+  </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="social-media">
+      <div class="social-item">
+        <img src="images/instagramlogo.webp" alt="Instagram" class="social-logo" />
+        <p>@LASI</p>
+      </div>
+      <div class="social-item">
+        <img src="images/wtsplogo.webp" alt="WhatsApp" class="social-logo" />
+        <p>+70 026 060</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
